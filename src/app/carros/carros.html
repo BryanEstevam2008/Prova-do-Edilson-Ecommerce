@@ -1,0 +1,23 @@
+<h2>Carros</h2>
+
+<section class="carros">
+
+    @for(carro of carros; track carro) {
+
+    <div class="carro">
+
+        <img [src]="carro.imagem" [alt]="carro.nome">
+
+        <h3>{{ carro.nome }}</h3>
+
+        <p>R$ {{ carro.preco }}</p>
+
+        <a routerLink="/carro-descricao/{{ carro.id }}">
+            Ver carro
+        </a>
+
+    </div>
+
+    }
+
+</section>

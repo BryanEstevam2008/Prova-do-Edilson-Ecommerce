@@ -1,0 +1,19 @@
+<div class="detalhe">
+
+    <img [src]="carro.imagem" [alt]="carro.nome">
+
+    <div class="informacoes">
+
+        <h2>{{ carro.nome }}</h2>
+
+        <h3>R$ {{ carro.preco }}</h3>
+
+        <p>
+            {{ carro.descricao }}
+        </p>
+
+        <a href="#" (click)="voltar($event)">Voltar</a>
+
+    </div>
+
+</div>
